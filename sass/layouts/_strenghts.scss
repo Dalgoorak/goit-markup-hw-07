@@ -1,0 +1,54 @@
+/* Сильные стороны */
+
+.section__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.strengths {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10;
+}
+
+.strengths__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+.strengths__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.strenghts__item+.strenghts__item {
+    margin-left: 30px;
+}
+
+.strenghts__item {
+    width: 270px;
+}
+
+/* svg диаграммы */
+
+.strenghts_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-bg-color);
+    height: 120px;
+    width: 270px;
+
+}

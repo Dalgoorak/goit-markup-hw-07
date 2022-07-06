@@ -1,0 +1,50 @@
+/* Footer */
+.footer {
+    background-color: var(--secondary-bg-text);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__section {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__logo--link {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+    
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+    
+    &__accent {
+        color: var(--accent-color);
+    }
+}
+
+/* Address */
+
+.footer__address {
+    margin-top: 20px;
+
+    &--link {
+        color: var(--address-color);
+        font-style: normal;
+        line-height: 1.71;
+    }
+    
+    &--item{
+        margin-bottom: 9px;
+    }
+}
+
+.footer__location--item {
+    color: var(--secondary-text-color);
+    font-style: normal;
+    line-height: 1.71;
+
+    margin-bottom: 9px;
+}
+

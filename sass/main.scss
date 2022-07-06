@@ -1,3 +1,30 @@
-body {
-    background-color: #fff;
-}
+// Utils
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+
+// Base
+@import "./base/commons";
+@import "./base/container";
+@import "./base/reset";
+
+// Components
+@import "./components/header-contacts";
+@import "./components/modal";
+@import "./components/checkbox";
+@import "./components/socials";
+
+// Layout
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/strenghts";
+@import "./layouts/benefits";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/filter";
+@import "./layouts/portfolio";
+@import "./layouts/portfolio-effects";
+@import "./layouts/footer";
+@import "./layouts/footer-form"
+
+
+

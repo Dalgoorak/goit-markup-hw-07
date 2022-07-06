@@ -1,0 +1,71 @@
+/* Contacts */
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon--mail {
+        display: block;
+        fill: var(--primary-text-color);
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item + &__item {
+        margin-left: 50px;
+    }
+
+    &__link--mail,
+    &__link--phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon--smartphone {
+        display: block;
+        fill: var(--primary-text-color);
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link--mail:hover,
+    &__link--mail:focus,
+    &__link--phone:hover,
+    &__link--phone:focus {
+        color: var(--accent-color);
+    }
+
+    &__link--mail:hover &__icon--mail,
+    &__link--mail:focus &__icon--mail,
+    &__link--phone:hover &__icon--smartphone,
+    &__link--phone:focus &__icon--smartphone {
+        fill: var(--accent-color);
+    }
+}

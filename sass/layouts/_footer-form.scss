@@ -1,0 +1,61 @@
+/* Форма */
+
+.footer__form {
+    display: flex;
+    margin-left: 93px;
+}
+
+.footer__field input {
+    display: block;
+
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    margin-top: 20px;
+    width: 360px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+
+    background: var(--secondary-bg-text);
+    color: var(--secondary-text-color);
+}
+
+.footer__field input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Кнопка */
+
+.button__subscribe {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: flex-end;
+
+    margin-left: 12px;
+    padding: 10px 30px;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+
+    &--icon {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+
+        fill: var(--secondary-text-color);
+    }
+}
