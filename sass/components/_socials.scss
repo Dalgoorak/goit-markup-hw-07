@@ -16,7 +16,7 @@
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .team__socials--link:hover,
@@ -31,7 +31,7 @@
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .team__socials--list+.team__socials--list {
@@ -80,7 +80,7 @@
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .footer__socials--link:hover,
@@ -96,7 +96,7 @@
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .footer__socials--item+.footer__socials--item {

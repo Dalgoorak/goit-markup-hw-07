@@ -13,6 +13,7 @@
   --bg-icon: rgba(255, 255, 255, 0.1);
   --bg-action: rgba(33, 150, 243, 0.9);
   --close-color: #000000;
+  --cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -116,8 +117,8 @@ textarea {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .contacts__item + .contacts__item {
@@ -142,8 +143,8 @@ textarea {
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .contacts__icon--smartphone {
@@ -156,8 +157,8 @@ textarea {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .contacts__link--mail:hover, .contacts__link--mail:focus, .contacts__link--phone:hover, .contacts__link--phone:focus {
@@ -180,8 +181,8 @@ textarea {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms var(--cubic-bezier);
+  transition: opacity 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -206,10 +207,10 @@ textarea {
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier), -webkit-transform 250ms var(--cubic-bezier);
 }
 
 /* Кнопка "закрыть" */
@@ -237,8 +238,8 @@ textarea {
   width: 18px;
   height: 18px;
   fill: var(--close-color);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms var(--cubic-bezier);
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .button__close:hover .button__close--icon {
@@ -289,8 +290,8 @@ textarea {
   left: 15px;
   width: 18px;
   height: 18px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms var(--cubic-bezier);
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .form__field:focus-within .form__icon {
@@ -306,17 +307,6 @@ textarea {
 }
 
 /* Checkbox */
-.form__checkbox--input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .form__checkbox--label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,8 +405,8 @@ textarea {
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .team__socials--link:hover,
@@ -432,8 +422,8 @@ textarea {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .team__socials--list + .team__socials--list {
@@ -477,8 +467,8 @@ textarea {
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .footer__socials--link:hover,
@@ -494,8 +484,8 @@ textarea {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .footer__socials--item + .footer__socials--item {
@@ -567,7 +557,7 @@ textarea {
   bottom: 0px;
   left: 0;
   display: block;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
@@ -841,8 +831,8 @@ textarea {
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 /* Ссылки на компании */
@@ -875,8 +865,8 @@ textarea {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .clients__item--link:hover > .clients__item--icon,
@@ -918,8 +908,8 @@ textarea {
   transition-property: background-color, color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .filter__button:hover, .filter__button:focus {
@@ -958,10 +948,10 @@ textarea {
   /* transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms var(--cubic-bezier);
+  transition: -webkit-box-shadow 250ms var(--cubic-bezier);
+  transition: box-shadow 250ms var(--cubic-bezier);
+  transition: box-shadow 250ms var(--cubic-bezier), -webkit-box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio__item .portfolio__link:hover,
@@ -1014,10 +1004,10 @@ textarea {
   background-color: var(--bg-action);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: -webkit-transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier);
+  transition: transform 250ms var(--cubic-bezier), -webkit-transform 250ms var(--cubic-bezier);
 }
 
 .portfolio__overlay--text {

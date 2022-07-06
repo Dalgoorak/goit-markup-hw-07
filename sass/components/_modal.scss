@@ -12,7 +12,7 @@
     opacity: 1;
     z-index: 1;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -38,7 +38,7 @@
 
     transform: translate(-50%, -50%) scale(1);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--cubic-bezier);
 }
 
 /* Кнопка "закрыть" */
@@ -65,7 +65,7 @@
 
         fill: var(--close-color);
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill 250ms var(--cubic-bezier);
     }
 
     &:hover &--icon {
@@ -116,7 +116,7 @@
     width: 18px;
     height: 18px;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--cubic-bezier);
 }
 
 .form__field:focus-within .form__icon {
