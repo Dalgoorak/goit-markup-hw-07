@@ -182,8 +182,6 @@ textarea {
     justify-content: center;
 }
 
-
-
 .contacts__icon--mail {
     display: block;
     fill: var(--primary-text-color);
@@ -530,7 +528,6 @@ textarea {
 /* section */
 
 /* Сильные стороны */
-
 
 .section__title {
     color: var(--title-text-color);
