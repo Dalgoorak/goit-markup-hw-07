@@ -16,6 +16,14 @@
   --cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
+body {
+  background-color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,14 +33,6 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-body {
-  background-color: var(--secondary-text-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
 }
 
 .section-main {
