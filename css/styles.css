@@ -467,8 +467,6 @@ textarea {
     margin-bottom: 30px;
 }
 
-
-
 .form__checkbox--icon {
     display: inline-block;
     justify-content: center;
@@ -484,8 +482,6 @@ textarea {
 .form__checkbox--input:checked+.form__checkbox--icon {
     background-color: var(--accent-color);
     border: none;
-
-
 }
 
 .form__checkbox--text {
@@ -494,8 +490,6 @@ textarea {
 
     color: var(--primary-text-color);
 }
-
-
 
 .form__checkbox--link {
     color: var(--accent-color);

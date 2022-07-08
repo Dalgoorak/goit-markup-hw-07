@@ -1,5 +1,5 @@
 // Utils
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./utils/visually-hidden";
 
 // Base
@@ -9,8 +9,8 @@
 
 // Components
 @import "./components/header-contacts";
-@import "./components/modal";
 @import "./components/checkbox";
+@import "./components/modal";
 @import "./components/socials";
 
 // Layout
@@ -24,7 +24,4 @@
 @import "./layouts/portfolio";
 @import "./layouts/portfolio-effects";
 @import "./layouts/footer";
-@import "./layouts/footer-form"
-
-
-
+@import "./layouts/footer-form";
